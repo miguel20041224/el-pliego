@@ -1,0 +1,13 @@
+# Reference material, not source. Copyrighted book kept locally only.
+*.pdf
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Nothing is built here: no bundler, no dependencies.
+node_modules/

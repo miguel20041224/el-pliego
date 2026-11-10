@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EL PLIEGO</title>
+<meta name="description" content="Las nueve técnicas de negociación de «Rompe la barrera del no» y el pliego de preparación de una página.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>EL PLIEGO</h1>
+  <p class="sub">
+    Negociación aplicada. Nueve técnicas, una hoja de preparación y tres mesas para probarlas.
+    Basado en el método de <em>Rompe la barrera del no</em> (Chris Voss).
+  </p>
+  <nav class="tabs" role="tablist" aria-label="Secciones">
+    <button role="tab" class="tab" data-tab="tecnicas" aria-selected="true">Las técnicas</button>
+    <button role="tab" class="tab" data-tab="pliego" aria-selected="false">Tu pliego</button>
+    <button role="tab" class="tab" data-tab="practica" aria-selected="false">Práctica</button>
+  </nav>
+</header>
+
+<main>
+
+  <section data-panel="tecnicas" role="tabpanel" aria-label="Las técnicas">
+    <p class="lead">
+      Una ficha por capítulo. Leelas en orden la primera vez: cada una supone la anterior.
+      Después volvé sólo a la que necesites.
+    </p>
+    <div id="techniques" class="cards"></div>
+  </section>
+
+  <section data-panel="pliego" role="tabpanel" aria-label="Tu pliego" hidden>
+    <p class="lead">
+      Cinco secciones. Esto es lo que llevás escrito a la mesa, porque bajo presión nadie se
+      crece: cada uno cae a la altura de su preparación. Se guarda solo, en este navegador.
+    </p>
+    <div id="progress" class="progress" aria-live="polite"></div>
+    <p id="save-note" class="note" role="status" hidden></p>
+    <div id="sheet" class="sheet"></div>
+    <div class="row">
+      <button class="primary" data-export="1">Descargar en .txt</button>
+      <button class="ghost" data-wipe="1">Borrar el pliego</button>
+    </div>
+    <p class="fine">
+      El pliego vive únicamente en este navegador (localStorage). No se envía a ningún
+      servidor ni sale de tu equipo. Descargalo si querés conservarlo.
+    </p>
+  </section>
+
+  <section data-panel="practica" role="tabpanel" aria-label="Práctica" hidden>
+    <div id="practice"></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>
+    Material didáctico de elaboración propia sobre el método descrito por Chris Voss en
+    <em>Rompe la barrera del no</em>. Los ejemplos, escenas y textos de esta página son
+    originales; el libro es la fuente del método, no de este contenido.
+  </p>
+</footer>
+
+<script src="src/data/techniques.js"></script>
+<script src="src/data/sheet.js"></script>
+<script src="src/data/drills.js"></script>
+<script src="src/app/store.js"></script>
+<script src="src/app/ui.js"></script>
+<script src="src/app/main.js"></script>
+</body>
+</html>
